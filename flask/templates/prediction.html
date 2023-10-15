@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home | project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .container-fluid{
+      background-color: #000000;
+  }
+  .nav.navbar-nav{
+   margin-left: 280px;
+   }
+   .navbar-brand{
+    font-size: 22px;
+   }
+   .footer{
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+   }
+   body{
+    background-image: url("https://i.pinimg.com/564x/7b/a2/f3/7ba2f3ae014b37733bcd6a8dd9d847cf.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+   }
+  </style>
+</head>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><b>Intelligent Vehicle Damage Assessment and Cost Estimator for Insurance Companies</b></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/register">Register</a></li>
+      <li class="active"><a href="/prediction">Prediction</a></li>
+    </ul>
+  </div>
+</nav><br><br><br><br>
+
+<div style="margin-top: -45px;" class="container"> 
+    <center> 
+        <h2 style="color:white;"><b>UPLOAD IMAGE TO PREDICT</b></h2><br>
+     <form action="/result" method="POST"  enctype="multipart/form-data">
+        <input style="background-color:rgb(83, 231, 247);
+                      opacity: 78%;
+                      color: rgb(255, 255, 255);
+                      font-size: 18px;
+                      width: 250px;"
+                      type="file" id="myFile" name="image">
+        <br><br>
+        <input style="  position: absolute;
+        font-size: 20px;
+        background-color: rgb(129, 241, 237);
+        color: #ffff;
+        left:47%;
+        border-radius:10px;
+       
+        font-family: "Amazon Ember,sans-serif; type="submit">
+     </form>
+     <br>
+     <h2 style="color:rgb(255, 153, 0);" >Your Price Range is: {{prediction}}</h2>
+    </center> 
+</div>
+<div class="footer">
+    <p style="color:white;
+              margin-top: 20px;
+              text-align: center;"><b>
+              COPYRIGHT @ 2023,ALL RIGHTS RESERVED</b>
+    </p>
+    
+  </div>
+  
+
+
+</body>
+</html>

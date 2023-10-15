@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+*{
+    font-family: 'poppins' ,sans-serif;
+}
+body{
+    background-image: url("bg3.png");
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.cont h3{
+    font-size: 40px;
+    color: white;
+}
+.cont p{
+    font-size: 25px;
+    color: white;
+}
+.btn{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+   
+   }
+.btn :hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
