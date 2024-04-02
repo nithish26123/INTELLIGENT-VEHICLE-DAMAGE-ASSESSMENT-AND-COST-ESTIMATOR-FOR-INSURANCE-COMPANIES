@@ -3,12 +3,13 @@
     font-family: 'poppins' ,sans-serif;
 }
 body{
-    background-image: url("bg3.png");
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.511)), url(static/bg3.png) no-repeat;
     background-color: black;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    
     
 }
 .box{

@@ -27,7 +27,7 @@
   width: 100%;
    }
    body{
-    background-image: url("https://i.pinimg.com/564x/7b/a2/f3/7ba2f3ae014b37733bcd6a8dd9d847cf.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.511)), url(static/bg3.png) no-repeat;
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -56,6 +56,8 @@
     <center> 
         <h2 style="color:white;"><b>UPLOAD IMAGE TO PREDICT</b></h2><br>
      <form action="/result" method="POST"  enctype="multipart/form-data">
+      <img src="{{ url_for('static', filename=img_path) }}" alt="Selected Image">
+
         <input style="background-color:rgb(83, 231, 247);
                       opacity: 78%;
                       color: rgb(255, 255, 255);

@@ -1,22 +1,24 @@
-import re
+
 import numpy as np
 import os
+
 from flask import Flask, app, request, render_template
 from keras import models
 from keras.models import load_model
 from tensorflow.keras.preprocessing import image
-import PIL.Image
 from tensorflow.python.ops.gen_array_ops import concat
 from keras.applications.inception_v3 import preprocess_input
-import requests
+
 from flask import Flask, request, render_template, redirect, url_for
 from werkzeug.utils import secure_filename
 
-model1=load_model('C:/Users/niam2/OneDrive/Desktop/project/Flask/body.h5')
-model2=load_model('C:/Users/niam2/OneDrive/Desktop/project/Flask/level.h5')
+
+model1=load_model("C:/Users/sivabala pc/Desktop/Vehicle-Damage-Assement-and-Cost-Estimator-main/venv/body.h5")
+model2=load_model("C:/Users/sivabala pc/Desktop/Vehicle-Damage-Assement-and-Cost-Estimator-main/venv/level.h5")
 
     
 app = Flask(__name__)
+
 
 
 @app.route('/')
@@ -100,8 +102,6 @@ def logout():
 
 
 
-
-
 @app.route('/result', methods=['POST'])
 def result():
     if request.method == "POST":
@@ -149,7 +149,7 @@ def result():
             value = "16000 - 50000 INR"
         print(value)
     
-        return render_template('prediction.html',prediction=value,image=img)
+        return render_template('prediction.html',prediction=value,img_path=img)
 
 
 

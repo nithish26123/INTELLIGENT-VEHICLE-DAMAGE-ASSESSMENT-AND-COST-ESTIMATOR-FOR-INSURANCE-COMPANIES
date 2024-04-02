@@ -27,7 +27,7 @@
   width: 100%;
    }
    body{
-    background-image: url("https://i.pinimg.com/564x/7b/a2/f3/7ba2f3ae014b37733bcd6a8dd9d847cf.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.511)), url(static/bg3.png) no-repeat;
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -60,24 +60,65 @@
   border-radius: 0.6rem;
   background-color:rgb(255, 111, 0);;
   color: #000000;
-  
+  text-decoration:none;
 }
 .btn:focus {
   border-color: rgb(255, 255, 255);
   box-shadow: rgba(78, 78, 78, 0.5) 0 2px 5px 0;
   outline: 0;
 }
+
 .img1 .name .btn{
   position: absolute;
   font-size: 20px;
   background-color: rgb(129, 241, 237);
   color: #ffff;
   top: 45%;
-  left:45%;
+  left:50%;
   font-family: "Amazon Ember",sans-serif;
 
 }
 .img1 .name .btn:hover{
+  background-color:rgb(139, 249, 245);
+  color: #000000;
+  transition-duration: 1s ;
+}
+.btn1{
+  text-decoration: none;
+  border-radius: 0.6rem;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid transparent; 
+  transition: 1s ease;
+  font-family: "Amazon Ember",sans-serif;
+
+}
+.btn1:hover{
+ 
+  border-radius: 0.6rem;
+  background-color:rgb(255, 111, 0);;
+  color: #000000;
+  text-decoration:none;
+  
+  
+}
+.btn1:focus {
+  border-color: rgb(255, 255, 255);
+  box-shadow: rgba(78, 78, 78, 0.5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.img1 .name .btn1{
+  position: absolute;
+  font-size: 20px;
+  background-color: rgb(129, 241, 237);
+  color: #ffff;
+  top: 45%;
+  left:40%;
+  font-family: "Amazon Ember",sans-serif;
+
+}
+.img1 .name .btn1:hover{
   background-color:rgb(139, 249, 245);
   color: #000000;
   transition-duration: 1s ;
@@ -117,9 +158,13 @@
      <section id="Home">
       <div class="img1">
         <div class="name">
-            <h3>Welcome to <span>Vehicle Damage Assesment</span> </h3> 
+            <h3>Welcome to<span>Vehicle Damage Assesment</span> </h3> 
             <p >Vehicle Damage Detection is used for reducing the claims leakage at the time of insurance claim process. Vechile Inspection and validation are usually done at that time. As it takes a long time, a person from insurance company need to come and Inspect Damage on vehicle. Here we are trying to Automate this procedure and by Using this Automation we can avoid time consumption for Insurance claim procedure</p>
-            <a href="/login" class="btn">Login</a>
+            <a href="/login" class="btn">Sign up</a>
+            <a href="/register" class="btn1">Sign in</a>
+            
+           
+            
             
         </div>
     </div>
